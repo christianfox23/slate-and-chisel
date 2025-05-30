@@ -1,0 +1,45 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #eee;
+}
+header {
+    background-color: #222;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: #ddd;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.hero {
+    padding: 2rem;
+    text-align: center;
+}
+.craft-images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.craft-images img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+section {
+    padding: 2rem;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+}
