@@ -9,10 +9,11 @@ body { font-family: 'Helvetica Neue', sans-serif; background: #fafafa; color: #3
   background: #fff; color: #333; padding: 0.75rem 1.5rem; border: 2px solid #333; border-radius: 4px; text-decoration: none; font-size: 1rem;
   transition: background 0.3s, color 0.3s;
 }
+/* Changed highlight color from yellow (#ffcc66) to teal (#008080) */
 .button:hover, .button.active {
-  background: #ffcc66; color: #fff; border-color: #ffcc66;
+  background: #008080; color: #fff; border-color: #008080;
 }
-.button.active { background: #ffcc66; color: #fff; }
+.button.active { background: #008080; color: #fff; }
 
 /* PADDING TOP TO ACCOUNT FOR FIXED HEADER */
 main, .about-content, .hero-create, .hero-contact {
@@ -35,7 +36,7 @@ main, .about-content, .hero-create, .hero-contact {
 
 /* ANIMATED BUTTON */
 .btn-animate {
-  background: #ffcc66; color: #333; padding: 1rem 2rem; border-radius: 4px; font-size: 1.1rem; text-decoration: none;
+  background: #008080; color: #fff; padding: 1rem 2rem; border-radius: 4px; font-size: 1.1rem; text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .btn-animate:hover { transform: translateY(-3px); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
@@ -100,7 +101,7 @@ main, .about-content, .hero-create, .hero-contact {
 }
 .phone-button {
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-  background: rgba(255,204,102,0.9); color: #333; padding: 0.75rem 1.5rem; border-radius: 4px; 
+  background: rgba(0,128,128,0.9); color: #fff; padding: 0.75rem 1.5rem; border-radius: 4px; 
   text-decoration: none; font-size: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
