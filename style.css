@@ -46,7 +46,7 @@ main, .coming-soon, .about-content, .contact-content {
 
 /* ABOUT CONTENT */
 .about-content { background: #fff; padding: 2rem; min-height: calc(100vh - 80px); }
-.quote-section { margin-bottom: 2rem; }
+.quote-section { margin-top: 2rem; }
 .quote-section p { font-size: 1rem; opacity: 0.8; line-height: 1.4; }
 .signature { display: block; margin-top: 1rem; font-style: italic; font-size: 0.9rem; opacity: 0.6; }
 .about-info h2 { font-size: 2rem; margin-bottom: 1rem; }
