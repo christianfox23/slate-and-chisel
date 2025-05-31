@@ -14,11 +14,11 @@ body { font-family: 'Helvetica Neue', sans-serif; background: #fafafa; color: #3
 .button.active { background: #ffcc66; color: #fff; }
 
 /* PADDING TOP TO ACCOUNT FOR FIXED HEADER */
-main, .coming-soon, .about-content, .contact-content {
+main, .about-content, .hero-create, .hero-contact {
   padding-top: 80px;
 }
 
-/* HERO SECTION */
+/* HERO LIGHT (Home) */
 .hero-light {
   display: flex; justify-content: center; align-items: center; height: calc(100vh - 80px);
   background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950') center/cover no-repeat;
@@ -32,30 +32,54 @@ main, .coming-soon, .about-content, .contact-content {
 .hero-content-light h2 { font-size: 3rem; margin-bottom: 1rem; }
 .hero-content-light p { font-size: 1.25rem; margin-bottom: 2rem; }
 
+/* HERO CREATE (Create Page) */
+.hero-create {
+  display: flex; justify-content: center; align-items: center; height: calc(100vh - 80px);
+  background: url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=1950') center/cover no-repeat;
+  position: relative;
+}
+.hero-create::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(255,255,255,0.7);
+}
+.hero-content-dark { position: relative; text-align: center; z-index: 1; }
+.hero-content-dark h2 { font-size: 2.5rem; margin-bottom: 1rem; color: #333; }
+.hero-content-dark p { font-size: 1.1rem; opacity: 0.8; margin-bottom: 1.5rem; color: #333; }
+
+/* HERO CONTACT (Contact Page) */
+.hero-contact {
+  display: flex; justify-content: center; align-items: center; height: calc(100vh - 80px);
+  background: url('https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=1950') center/cover no-repeat;
+  position: relative;
+}
+.hero-contact::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(255,255,255,0.7);
+}
+
 /* ANIMATED BUTTON */
-.btn-animate {
+.btn-animate, .email-button {
   background: #ffcc66; color: #333; padding: 1rem 2rem; border-radius: 4px; font-size: 1rem; text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.btn-animate:hover { transform: translateY(-3px); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
-
-/* COMING SOON */
-.coming-soon { display: flex; flex-direction: column; align-items: center; justify-content: center; height: calc(100vh - 80px); text-align: center; background: #fff; }
-.coming-soon h2 { font-size: 2.5rem; margin-bottom: 1rem; }
-.coming-soon p { font-size: 1.1rem; opacity: 0.8; }
+.btn-animate:hover, .email-button:hover { transform: translateY(-3px); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
 
 /* ABOUT CONTENT */
 .about-content { background: #fff; padding: 2rem; min-height: calc(100vh - 80px); }
-.quote-section { margin-top: 2rem; }
+.about-hero {
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950') center/cover no-repeat;
+  height: 300px; margin-bottom: 2rem; position: relative;
+}
+.about-hero::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(255,255,255,0.6);
+}
+.about-info h2 { font-size: 2rem; margin-bottom: 1rem; }
+.about-info p { font-size: 1.1rem; opacity: 0.8; line-height: 1.4; margin-bottom: 2rem; }
+
+/* QUOTE SECTION */
 .quote-section p { font-size: 1rem; opacity: 0.8; line-height: 1.4; }
 .signature { display: block; margin-top: 1rem; font-style: italic; font-size: 0.9rem; opacity: 0.6; }
-.about-info h2 { font-size: 2rem; margin-bottom: 1rem; }
-.about-info p { font-size: 1.1rem; opacity: 0.8; }
-
-/* CONTACT CONTENT */
-.contact-content { display: flex; flex-direction: column; align-items: center; justify-content: center; height: calc(100vh - 80px); text-align: center; background: #fff; }
-.contact-content h2 { font-size: 2rem; margin-bottom: 1rem; }
-.contact-content p { font-size: 1rem; opacity: 0.8; }
 
 /* FOOTER */
 .site-footer-light { background: #fff; text-align: center; padding: 2rem 0; border-top: 1px solid #eee; }
@@ -63,6 +87,6 @@ main, .coming-soon, .about-content, .contact-content {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .hero-content-light h2 { font-size: 2.5rem; }
-  .hero-content-light p { font-size: 1rem; }
+  .hero-content-light h2, .hero-content-dark h2 { font-size: 2.5rem; }
+  .hero-content-light p, .hero-content-dark p { font-size: 1rem; }
 }
