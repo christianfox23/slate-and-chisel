@@ -1,84 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Slate & Chisel</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // No extra JS needed; CSS handles dropdown and animations
+  </script>
 </head>
 <body>
-
   <header class="site-header">
-    <h1>Slate & Chisel</h1>
+    <div class="logo-title">
+      <h1>Slate & Chisel</h1>
+    </div>
     <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="create.html">Create Website</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="create.html">Create Website</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
     </nav>
+    <div class="quote-container">
+      <div class="quote">"At Slate & Chisel we believe design is a craft. We are dedicated to helping small businesses develop and grow with our elegant and professional designs."
+        <span class="signature">— Christian Fox, Founder & CEO</span>
+      </div>
+    </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h2>Timeless Craft. Modern Web.</h2>
-      <p>We carve out digital experiences with artisan precision.</p>
-      <a href="create.html" class="btn">Get Started</a>
+  <main class="hero-light">
+    <div class="hero-content-light">
+      <h2>Welcome to Slate & Chisel</h2>
+      <p>Crafting Beautiful Web Experiences</p>
+      <a href="create.html" class="btn-animate">Create Website</a>
     </div>
-  </section>
+  </main>
 
-  <!-- OUR CRAFT GRID -->
-  <section class="craft-grid">
-    <h3>Our Craft</h3>
-    <div class="cards">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1516632664305-eda5d270e239" alt="">
-        <div class="card-info">
-          <h4>Precision Design</h4>
-          <p>Clean layouts built to capture attention.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1581090700227-1fdcf810a1b5" alt="">
-        <div class="card-info">
-          <h4>Handcrafted Code</h4>
-          <p>Every line optimized and elegant.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b0" alt="">
-        <div class="card-info">
-          <h4>Responsive Build</h4>
-          <p>Works seamlessly on every device.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY US -->
-  <section class="why-us">
-    <div class="feature">
-      <h4>Artisanal Approach</h4>
-      <p>We treat every site like a bespoke sculpture.</p>
-    </div>
-    <div class="feature">
-      <h4>Minimalist Focus</h4>
-      <p>Nothing extra — only what matters.</p>
-    </div>
-    <div class="feature">
-      <h4>Free Hosting Setup</h4>
-      <p>Guidance on deploying to GitHub Pages / Netlify.</p>
-    </div>
-  </section>
-
-  <footer class="site-footer">
+  <footer class="site-footer-light">
     <p>&copy; 2025 Slate & Chisel</p>
-    <div class="social">
-      <a href="#"><img src="https://simpleicons.org/icons/github.svg" alt="GitHub"></a>
-      <a href="#"><img src="https://simpleicons.org/icons/linkedin.svg" alt="LinkedIn"></a>
-    </div>
   </footer>
-
 </body>
 </html>
